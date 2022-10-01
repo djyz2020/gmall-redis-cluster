@@ -1,3 +1,12 @@
+Redis-Cluster采用无中心结构，每个节点保存数据和整个集群状态，每个节点都和其他所有节点连接。
+一组Redis Cluster是由多个Redis实例组成，官方推荐使用6实例，其中3个为主节点，3个为从节点。一旦有主节点发生故障的时候，Redis Cluster可以选举出对应的从节点成为新的主节点，继续对外服务，从而保证服务的高可用性。
+<ul>
+<li>1.当集群内一个Master以及其对应的Slave同时宕机，集群将无法提供服务。</li>
+<li>2.当存活的主节点数小于总节点数的一半时，整个集群就无法提供服务了。</li>
+</ul>
+
+<img alt="" height="691" src="https://img-blog.csdnimg.cn/20210812160019222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoaW1vbW8=,size_16,color_FFFFFF,t_70" width="1200">
+
 ### 创建create-redis.sh
 ```
 HOST=$1
