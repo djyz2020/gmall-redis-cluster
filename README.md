@@ -42,8 +42,8 @@ docker exec -it redis7001 redis-cli --cluster create 192.168.126.136:7001 192.16
 
 ### 参考博客：
 <ul>
-<li><url>https://blog.csdn.net/qq_43430759/article/details/126352446</url></li>
-<li><url>https://www.pudn.com/news/632629932aaf6043c988feca.html</url></li>
-<li><url>https://mafgwo.cn/2021/02/07/2018_Redis%E4%B8%89%E4%B8%BB%E4%B8%89%E4%BB%8E%E9%9B%86%E7%BE%A4Docker%E6%96%B9%E5%BC%8F%E6%90%AD%E5%BB%BA/</url></li>
+<li>docker搭建redis三主三从集群: <url>https://blog.csdn.net/qq_43430759/article/details/126352446</url></li>
+<li>docker容器化搭建 redis7.0.4 三主三从集群 [详细说明，步骤简洁]<url>https://www.pudn.com/news/632629932aaf6043c988feca.html</url></li>
+<li>Redis三主三从集群Docker方式搭建<url>https://mafgwo.cn/2021/02/07/2018_Redis%E4%B8%89%E4%B8%BB%E4%B8%89%E4%BB%8E%E9%9B%86%E7%BE%A4Docker%E6%96%B9%E5%BC%8F%E6%90%AD%E5%BB%BA/</url></li>
 </ul>
 
